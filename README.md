@@ -109,42 +109,78 @@ Salary is influenced more by professional experience and education than by age a
 ### 🔢 Model Specification
 A Multiple Linear Regression model was applied using Excel’s Data Analysis ToolPak to assess the combined effect of several variables on salary.
 
+## 📊 Multiple Linear Regression Output (Excel)
+
+The Multiple Linear Regression analysis was conducted using Microsoft Excel’s **Data Analysis ToolPak** to examine the effect of **education level** and **years of experience** on employee salary.
+
+---
+
+### 📈 Regression Statistics
+
+| Statistic | Value |
+|---------|-------|
+| Multiple R | 0.9284 |
+| R Square (R²) | 0.8620 |
+| Adjusted R Square | 0.8603 |
+| Standard Error | 18,542.68 |
+| Observations | 172 |
+
+**Interpretation:**  
+The R² value of **0.862** indicates that approximately **86.2% of the variation in employee salary** is explained by education level and years of experience. This shows a very strong model fit.
+
+---
+
+### 🧮 ANOVA Results
+
+| Source | df | SS | MS | F | Significance F |
+|------|----|----|----|---|----------------|
+| Regression | 2 | 3.63E+11 | 1.81E+11 | 527.70 | 2.12E-73 |
+| Residual | 169 | 5.81E+10 | 3.44E+08 | | |
+| Total | 171 | 4.21E+11 | | | |
+
+**Interpretation:**  
+The **Significance F (p < 0.05)** indicates that the regression model is **statistically significant**, meaning education level and years of experience jointly have a significant effect on salary.
+
+---
+
+### 📋 Regression Coefficients
+
+| Variable | Coefficient (β) | Std. Error | t-Stat | P-value | 95% CI Lower | 95% CI Upper |
+|--------|-----------------|------------|--------|---------|--------------|--------------|
+| Intercept | 9,770.23 | 3,557.14 | 2.75 | 0.0067 | 2,748.07 | 16,792.39 |
+| Education Code | 20,202.59 | 2,341.23 | 8.63 | 4.39E-15 | 15,580.76 | 24,824.41 |
+| Years of Experience | 5,382.76 | 232.32 | 23.17 | 2.44E-54 | 4,924.13 | 5,841.39 |
+
+---
+
+### 🔢 Regression Equation
+
 \[
-Salary = β₀ + β₁(Age) + β₂(Years\ of\ Experience) + β₃(Education\ Level) + β₄(Gender) + β₅(Job\ Title) + ε
+\text{Salary} = 9,770.23 + 20,202.59(\text{Education Code}) + 5,382.76(\text{Years of Experience})
 \]
 
 ---
 
-### 📌 Explanation of Variables
+### 📌 Interpretation of Coefficients
 
-| Symbol | Description |
-|------|-------------|
-| Salary | Dependent variable (annual salary) |
-| β₀ | Intercept |
-| β₁–β₅ | Regression coefficients |
-| Age | Employee age |
-| Years of Experience | Total work experience |
-| Education Level | Highest qualification (coded) |
-| Gender | Dummy coded variable |
-| Job Title | Coded job role |
-| ε | Error term |
+- **Education Code:**  
+  Statistically significant (p < 0.05). For each increase in education level (e.g., Bachelor’s to Master’s), salary increases by approximately **20,203 units**, holding experience constant.
+
+- **Years of Experience:**  
+  Highly significant (p < 0.05). Each additional year of experience increases salary by approximately **5,383 units**, holding education constant.
+
+- **Intercept:**  
+  Represents the expected salary when education level and experience are zero. Although statistically significant, it mainly serves as a baseline for the model.
 
 ---
 
-### 🧮 Coding of Categorical Variables
-- Education Level:  
-  - 1 = Bachelor’s  
-  - 2 = Master’s  
-  - 3 = PhD  
-
-- Gender:  
-  - 0 = Female  
-  - 1 = Male  
-
-- Job Title:  
-  - Encoded numerically based on role category
+### ✅ Regression Conclusion
+The regression results indicate that **both education level and years of experience are strong and statistically significant predictors of employee salary**. Years of experience has the greatest influence on salary, followed by education level. The high R² value confirms that the model explains a substantial portion of salary variation, making it suitable for salary determination analysis using Excel.
 
 ---
+
+### ⚠️ Note
+This regression model includes only education level and years of experience. Other factors such as job title, gender, and age may further improve the model if included.
 
 ### 📊 Model Interpretation
 - Years of experience has the strongest positive effect on salary.
