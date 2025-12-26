@@ -212,6 +212,7 @@ This regression model includes only education level and years of experience. Oth
 ---
 
 I am open to collaborate on data analysis, statistical analysis and visualization related projects.
+
 You can reach me via e-mail [iyioladavidstar@gmail.com], linkedin[www.linkedin.com/in/iyiola-david-541a5518a], twitter[https://x.com/Dayvidstar], Facebook[https://web.facebook.com/david.tunmise.1/]
 
 ## 👨‍🎓 Author
