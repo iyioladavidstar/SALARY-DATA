@@ -1,4 +1,7 @@
 # SALARY-DATA
+
+![Image](https://github.com/user-attachments/assets/6907d3de-dd00-403e-afeb-1a2890cb34ee)
+
 This dataset contains information about employee demographics, job roles, and salaries across different industries. It can be used for salary prediction, workforce analytics, and HR insights.
 
 # 📊 Salary Data Analysis Using Excel
